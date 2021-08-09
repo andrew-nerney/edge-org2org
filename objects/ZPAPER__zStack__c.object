@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>ZPAPER__Classification__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Classification</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Care Coordination</fullName>
+                    <default>false</default>
+                    <label>Care Coordination</label>
+                </value>
+                <value>
+                    <fullName>Specialty Drugs</fullName>
+                    <default>false</default>
+                    <label>Specialty Drugs</label>
+                </value>
+                <value>
+                    <fullName>State Care</fullName>
+                    <default>false</default>
+                    <label>State Care</label>
+                </value>
+                <value>
+                    <fullName>Intake</fullName>
+                    <default>true</default>
+                    <label>Intake</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZPAPER__Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Lifecycle of a document from its beginning to end within a flow.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Not all documents go through all stages.</inlineHelpText>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ZPAPER__faxType__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Discovered</fullName>
+                    <default>false</default>
+                    <label>Discovered</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Received</fullName>
+                    <default>false</default>
+                    <label>Received</label>
+                </value>
+                <value>
+                    <fullName>Indexed</fullName>
+                    <default>false</default>
+                    <label>Indexed</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+                <value>
+                    <fullName>Updated</fullName>
+                    <default>false</default>
+                    <label>Updated</label>
+                </value>
+                <value>
+                    <fullName>Verified</fullName>
+                    <default>false</default>
+                    <label>Verified</label>
+                </value>
+                <value>
+                    <fullName>Generated</fullName>
+                    <default>false</default>
+                    <label>Generated</label>
+                </value>
+                <value>
+                    <fullName>Reviewed</fullName>
+                    <default>false</default>
+                    <label>Reviewed</label>
+                </value>
+                <value>
+                    <fullName>Delivered</fullName>
+                    <default>false</default>
+                    <label>Delivered</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+                <value>
+                    <fullName>Archived</fullName>
+                    <default>false</default>
+                    <label>Archived</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>POI:Proof of Insurance</controllingFieldValue>
+                <controllingFieldValue>FIN:Financial Info</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <controllingFieldValue>FAX:fax</controllingFieldValue>
+                <valueName>Completed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>POI:Proof of Insurance</controllingFieldValue>
+                <controllingFieldValue>FIN:Financial Info</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Received</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>POI:Proof of Insurance</controllingFieldValue>
+                <controllingFieldValue>FIN:Financial Info</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Indexed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>POI:Proof of Insurance</controllingFieldValue>
+                <controllingFieldValue>FIN:Financial Info</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Rejected</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>POI:Proof of Insurance</controllingFieldValue>
+                <controllingFieldValue>FIN:Financial Info</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Processed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Updated</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Verified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <valueName>Generated</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ENRL:Enrollment</controllingFieldValue>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>CCD:Continuity of Care</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <valueName>Reviewed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <valueName>Delivered</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <valueName>Failed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MIF:Missing Info</controllingFieldValue>
+                <controllingFieldValue>PAF:Patient Authorization</controllingFieldValue>
+                <controllingFieldValue>POI:Proof of Insurance</controllingFieldValue>
+                <controllingFieldValue>FIN:Financial Info</controllingFieldValue>
+                <controllingFieldValue>3500:FDA-3500</controllingFieldValue>
+                <controllingFieldValue>I9:I-9</controllingFieldValue>
+                <controllingFieldValue>IC:Insurance Card</controllingFieldValue>
+                <controllingFieldValue>PREL:Patient Release</controllingFieldValue>
+                <controllingFieldValue>W4:W-4</controllingFieldValue>
+                <valueName>Archived</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ZPAPER__faxType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ZPAPER__Classification__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>MIF:Missing Info</fullName>
+                    <default>false</default>
+                    <label>MIF:Missing Info</label>
+                </value>
+                <value>
+                    <fullName>PAF:Patient Authorization</fullName>
+                    <default>false</default>
+                    <label>PAF:Patient Authorization</label>
+                </value>
+                <value>
+                    <fullName>POI:Proof of Insurance</fullName>
+                    <default>false</default>
+                    <label>POI:Proof of Insurance</label>
+                </value>
+                <value>
+                    <fullName>FIN:Financial Info</fullName>
+                    <default>false</default>
+                    <label>FIN:Financial Info</label>
+                </value>
+                <value>
+                    <fullName>3500:FDA-3500</fullName>
+                    <default>false</default>
+                    <label>3500:FDA-3500</label>
+                </value>
+                <value>
+                    <fullName>I9:I-9</fullName>
+                    <default>false</default>
+                    <label>I9:I-9</label>
+                </value>
+                <value>
+                    <fullName>IC:Insurance Card</fullName>
+                    <default>false</default>
+                    <label>IC:Insurance Card</label>
+                </value>
+                <value>
+                    <fullName>PREL:Patient Release</fullName>
+                    <default>false</default>
+                    <label>PREL:Patient Release</label>
+                </value>
+                <value>
+                    <fullName>W4:W-4</fullName>
+                    <default>false</default>
+                    <label>W4:W-4</label>
+                </value>
+                <value>
+                    <fullName>FAX:fax</fullName>
+                    <default>false</default>
+                    <label>FAX:fax</label>
+                </value>
+                <value>
+                    <fullName>ENRL:Enrollment</fullName>
+                    <default>true</default>
+                    <label>ENRL:Enrollment</label>
+                </value>
+                <value>
+                    <fullName>CCD:Continuity of Care</fullName>
+                    <default>false</default>
+                    <label>CCD:Continuity of Care</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Intake</controllingFieldValue>
+                <valueName>MIF:Missing Info</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intake</controllingFieldValue>
+                <valueName>PAF:Patient Authorization</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intake</controllingFieldValue>
+                <valueName>POI:Proof of Insurance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Intake</controllingFieldValue>
+                <valueName>FIN:Financial Info</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+</CustomObject>
